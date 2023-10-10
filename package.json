@@ -1,0 +1,21 @@
+{
+  "name": "wiki-link-tests",
+  "version": "1.0.0",
+  "description": "Testing EJS and CJS imports for 'remark-wiki-link'",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-ejs && npm run test-cjs",
+    "test-ejs": "node --loader ts-node/esm ejs-test.js",
+    "test-cjs": "node cjs-test.cjs"
+  },
+  "dependencies": {
+    "remark-parse": "^10.0.0",
+    "remark-wiki-link": "2.0.1-beta.1",
+    "unified": "^10.1.0",
+    "unist-util-visit": "^4.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0"
+  },
+  "type": "module"
+}
